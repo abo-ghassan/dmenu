@@ -27,14 +27,11 @@ static unsigned int lines      = 10;
 static const char worddelimiters[] = " ";
 
 /* -fn option overrides fonts[0]; default X11 font or font set */
-static const char *fonts[] = {
-	"Monospace:size=11",
-	"NotoColorEmoji:pixelsize=20"
-};
+static const char *fonts[] = { "Monospace:size=11" };
 
 static const char *colors[SchemeLast][2] = {
-	/* 		 fg         bg       */
-	[SchemeNorm] = { "#bfbfbf", "#222222" },
-	[SchemeSel]  = { "#bfbfbf", "#660066" },
-	[SchemeOut]  = { "#000000", "#00ffff" },
+	/* 		 fg      bg     */
+	[SchemeNorm] = { "#ddd", "#222" },
+	[SchemeSel]  = { "#ddd", "#606" },
+	[SchemeOut]  = { "#000", "#0ff" },
 };
